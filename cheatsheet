@@ -1,0 +1,232 @@
+/* ================================================================
+   CHEAT SHEET – UITLEG VAN HTML & CSS GEBRUIKT IN DIT PROJECT
+   Project: The Design Papers / De Leraar als Ontwerper
+   Auteur: De Riddler ;)
+   ---------------------------------------------------------------
+   Deze sectie legt uit wat elk belangrijk HTML-element en CSS-blok
+   in jouw website doet en hoe ze samenwerken.
+   ================================================================ */
+
+/* ================================================================
+   README voor als mijn docent dit leest
+   ---------------------------------------------------------------
+   Ik heb al LANG genoeg besteed aan deze code
+   bijna een BREAKDOWN gekregen van de STOMME (CAPSLOCK XXL font size 999*99
+   rood gemarkeerde cursieve DIKGEDRUKTE en ALLES tegelijk gestylde)
+   CODE 😭😭😭
+   Maar he, het werkt, en dat is wat telt, toch?
+   Dus hier is een overzicht van wat elk deel doet.
+   (Sorry dat het niet perfect is, ik heb mijn best gedaan!)
+Oh ja Wil,
+Door mijn CSS(Style.css) en HTML(index/article.html) zijn phasmophobia evidences gescattered.
+Vind ze en raad de ghost type!
+   ================================================================ */
+
+/* =======================
+   ALGEMENE STRUCTUUR
+   ======================= */
+
+/* :root
+   Bevat CSS-variabelen (kleuren en fonts) die overal worden gebruikt.
+   Maakt het makkelijk om in één keer kleuren of lettertypes aan te passen.
+*/
+:root {}
+
+/* body
+   De basis van elke HTML-pagina. Hier stel je standaardlettertype en tekstkleur in
+   zodat alles er consistent uitziet.
+*/
+body {}
+
+/* header
+   De bovenste balk met de sitenaam (“The design papers”) en navigatielinks.
+   Is sticky (blijft bovenaan zichtbaar tijdens scrollen).
+*/
+header {}
+
+/* header a
+   De links binnen de header: witruimte, lettergrootte, en kleur worden ingesteld
+   om ze duidelijk en consistent te maken.
+*/
+header a {}
+
+/* .nav-right
+   De container rechts in de header met “Saved” en “Contact”.
+   Met flexbox opgemaakt om de links naast elkaar te tonen.
+*/
+.nav-right {}
+
+/* img
+   Zorgt dat alle afbeeldingen automatisch netjes schalen (100% breedte).
+*/
+img {}
+
+/* h1, h2, p
+   Typografie voor koppen en paragrafen. Gebruik van variabelen voor fonts
+   zorgt voor een herkenbare visuele stijl in de hele site.
+*/
+h1, h2, p {}
+
+/* =======================
+   HERO-SECTIES
+   ======================= */
+
+/* .Hero (Article.html)
+   Groot bovenstuk van de pagina met een afbeelding en een titel eroverheen.
+   De tekst wordt met absolute positioning over de afbeelding geplaatst.
+*/
+.Hero {}
+
+/* .IndexHero (Index.html)
+   Zelfde idee, maar dan voor de hoofdpagina. 
+   De titel staat rechts op de afbeelding met een zachte slagschaduw.
+*/
+.IndexHero {}
+
+/* =======================
+   EIGEN ONDERZOEK
+   ======================= */
+
+/* .eigenOZ
+   Sectie waarin tekst en afbeeldingen worden gecombineerd in kolommen.
+   Flexbox zorgt ervoor dat tekst en beeld naast elkaar staan of worden omgedraaid.
+*/
+.eigenOZ {}
+
+/* .eigenOZ .content-row
+   Een rij binnen de sectie: 2 kolommen (tekst links, afbeelding rechts).
+*/
+.eigenOZ .content-row {}
+
+/* .eigenOZ .content-row.reverse
+   Draait de volgorde om (afbeelding links, tekst rechts).
+   Gebruikt flexbox en padding om symmetrisch te blijven.
+*/
+.eigenOZ .content-row.reverse {}
+
+/* =======================
+   FEATURED ARTICLE
+   ======================= */
+
+/* .FeaturedArt
+   Gekleurde sectie (paars) met een grote afbeelding en overlaytekst.
+   De groene knop rechts onderaan linkt naar meer info.
+*/
+.FeaturedArt {}
+
+/* .FeaturedArt .Button
+   De knop in deze sectie. Felgroen met zwarte rand.
+   Wordt iets donkerder bij hover (lichte interactie).
+*/
+.FeaturedArt .Button {}
+
+/* =======================
+   SIGN-UP
+   ======================= */
+
+/* .SignUp
+   Een promotieblok: “Like this article?” met een nep-inschrijfformulier.
+   Layout met twee kolommen: tekst links, invulvakken rechts.
+*/
+.SignUp {}
+
+/* .SignUp .info
+   De rechterschuif met vakken voor e-mail, naam en geboortedatum.
+   Stijlen lijken op invulvelden, maar zijn puur decoratief.
+*/
+.SignUp .info {}
+
+/* .SignUp .su
+   De witte “Sign me up!” knop onderaan de invulvelden.
+   Rechthoekige vorm met zwarte rand, gecentreerde tekst.
+*/
+.SignUp .su {}
+
+/* =======================
+   INTERVIEWS
+   ======================= */
+
+/* .InterviewGB & .InterviewEX
+   Twee bijna identieke secties met elk een grote afbeelding bovenaan
+   en een tekstblok eronder. De titel (h1) ligt bovenop de afbeelding.
+*/
+.InterviewGB, .InterviewEX {}
+
+/* =======================
+   CONCLUSIE
+   ======================= */
+
+/* .Conclusie
+   Tekstuele afsluiter van de pagina. Brede marges en duidelijke titel.
+*/
+.Conclusie {}
+
+/* =======================
+   VERVOLGARTIKELEN (VGA)
+   ======================= */
+
+/* .VGA
+   Toont drie voorgestelde artikelen naast elkaar met een foto, titel en tekst.
+   Elk artikel is een gekleurd blok met border en afgeronde hoeken.
+*/
+.VGA {}
+
+/* .SW, .T, .B
+   De drie blokken met verschillende achtergrondkleuren:
+   - SW: aqua (Samenwerking)
+   - T: greenyellow (Technologie)
+   - B: mediumaquamarine (Buiten leren)
+*/
+.SW {}
+.T {}
+.B {}
+
+/* =======================
+   BRONNEN & FOOTER
+   ======================= */
+
+/* .Bronnen
+   Lijst met gebruikte bronnen, met zachte oranje achtergrond.
+   Zorgt voor afsluitend, informatief deel van de pagina.
+*/
+.Bronnen {}
+
+/* footer
+   Onderaan elke pagina; bevat projectinfo en auteursvermelding.
+   Grote padding en dezelfde hoofdkleur als header.
+*/
+footer {}
+
+/* =======================
+   INDEX PAGINA EXTRA'S
+   ======================= */
+
+/* .IndexQuote
+   Toont een citaat in het midden van de pagina.
+*/
+.IndexQuote {}
+
+/* .IndexArticle
+   Hoofdartikel-link met afbeelding en overlaytekst (doorklikbaar).
+*/
+.IndexArticle {}
+
+/* .IndexThumbnails
+   Raster van 8 kleine artikelen (2 kolommen x 4 rijen).
+   Grid layout zorgt voor nette uitlijning.
+*/
+.IndexThumbnails {}
+
+/* .IndexSpot
+   Kleine afsluitende afbeelding onderaan de indexpagina.
+*/
+.IndexSpot {}
+
+/* =======================
+   EXTRA NOTITIES
+   =======================
+   - De site gebruikt alleen externe CSS-bestanden (goede praktijk).
+   - Alles is responsive door gebruik van percentages en flex/grid.
+   - Kleurvariabelen en fonts zijn goed gekozen en consistent.
+   - Herhaling van code is minimaal dankzij DRY-aanpak.
+*/

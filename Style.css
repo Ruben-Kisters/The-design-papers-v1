@@ -1,0 +1,485 @@
+:root {
+    --font-header: 'Hermeneus One', sans-serif;
+    --font-body: 'Heebo', sans-serif;
+    --font-accent: 'Happy Monkey', cursive;
+    --main-color: #FFC491;
+    --highlight: #D33A3A;
+    --purple: #8070FB;
+    --section-padding: 100px 15%;
+    --border-radius: 8px;
+    --Myling:'little ghost';
+}
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    color: #000;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1, h2, h3 { margin: 0; }
+
+h1 {
+    font-family: var(--font-header);
+    font-size: 96px;
+}
+
+h2, h3 { font-family: var(--font-body); }
+
+p {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Header */
+header {
+    background-color: var(--main-color);
+    height: 60px;
+    width: 1345px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font-body);
+}
+
+header a:first-child {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .nav-right {
+    display: flex;
+    gap: 24px;
+}
+
+/* Borders */
+[class^="BorderH"] {
+    background: var(--main-color);
+    height: 45px;
+    width: 100%;
+}
+
+/* Hero */
+.Hero {
+    position: relative;
+    text-align: center;
+}
+
+.Hero h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9DB9FF;
+    font-size: 48px;
+    width: 80%;
+}
+
+/* Content sections */
+.eigenOZ {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.eigenOZ h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.eigenOZ .content-row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 0 8%;
+}
+
+.eigenOZ .content-row p {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.eigenOZ .content-row img {
+    flex: 1;
+    max-width: 45%;
+}
+
+.eigenOZ .content-row.reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--section-padding);
+}
+
+.w { padding-left: 575px; text-align: center; }
+.im { margin-left: 600px; width: 550px; height: 735px; }
+.imq { width: 529px; height: 393px; }
+
+.FeaturedArt {
+    background: var(--purple);
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.FeaturedArt h1 {
+    font-size: 64px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.FeaturedArt a h2 {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    bottom: 40px;
+    left: 40px;
+    max-width: 60%;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.FeaturedArt .button,
+.FeaturedArt .Button {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: #39e600;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: var(--border-radius);
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.FeaturedArt .button h2 {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.1;
+    text-align: center;
+    display: block;
+    word-break: break-word;
+}
+
+.FeaturedArt .button:hover { filter: brightness(0.95); }
+
+.SignUp {
+    background: var(--main-color);
+    padding: var(--section-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.SignUp h1 {
+    max-width: 55%;
+    margin-bottom: 20px;
+}
+
+.SignUp h2 { font-size: 24px; margin-top: 8px; }
+
+.SignUp .info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.SignUp .info > div:not(.su) {
+    width: 306px;
+    height: 49px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: /*Evidence: Ghost writing*/var(--border-radius);
+    padding-left: 14px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.SignUp .info > div.email h2,
+.SignUp .info > div.name h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.SignUp .info .su {
+    width: 140px;
+    height: 49px;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SignUp .info .su a {
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.InterviewGB,
+.InterviewEX {
+    position: relative;
+    margin: 60px 0;
+}
+
+.InterviewGB h1,
+.InterviewEX h1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: var(--highlight);
+    font-size: 96px;
+    line-height: 1;
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    max-width: 60%;
+}
+
+.InterviewGB p,
+.InterviewEX p {
+    max-width: 900px;
+    margin: 20px 15% 40px;
+}
+
+.Conclusie {
+    padding: var(--section-padding);
+}
+
+.Conclusie h1 {
+    margin-bottom: 40px;
+}
+
+/* Suggested Articles */
+.VGA {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.VGA div {
+    width: 269px;
+    height: 535px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.VGA div img {
+    width: 269px;
+    height: 290px;
+    border-bottom: 2px solid #000;
+    border-radius: var/*Evidence: Geen spirit box*/(--border-radius) var(--border-radius) 0 0;
+}
+
+.VGA div h1 {
+    padding: 16px 15px 8px;
+    font-size: 40px;
+    color: var(--highlight);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.VGA div p {
+    padding: 0 15px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.SW { background-color: aqua; }
+.T { background-color: greenyellow; }
+.B { background-color: mediumaquamarine; }
+
+
+/* Footer & Sources */
+.Bronnen {
+    padding: 80px 15%;
+    background: #f8b57c;
+}
+
+.Bronnen h2 {
+    font-family: var(--font-header);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.Bronnen p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: var(--section-padding);
+}
+
+footer h2 { margin-bottom: 20px; }
+footer p { max-width: 900px; }
+
+/* Index Page */
+.IndexHero .hero-container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.IndexHero .hero-container img {
+    height: 720px;
+}
+
+.IndexHero .hero-title {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 64px;
+    text-shadow: 1px 1px 4px rgba(255,255,255,0.6);
+}
+
+.IndexQuote {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.IndexQuote blockquote {
+    font-size: 28px;
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.IndexArticle .article-link {
+    position: relative;
+    display: block;
+    max-width: 1100px;
+    margin: 30px auto;
+    text-decoration: none;
+}
+
+.IndexArticle .article-img {
+    height: 480px;
+    border-radius: var(--border-radius);
+}
+
+.IndexArticle .article-overlay-text {
+    position: absolute;
+    left: 40px;
+    top: 40px; /* Evidence: Geen ghost orbs*/
+    background: rgba(255,255,255,0.92);
+    padding: 32px 36px 32px 32px;
+    border-radius: var(--border-radius);
+    font-size: 2.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+    z-index: 2;
+    max-width: 480px;
+    line-height: 1.2;
+    pointer-events: none;
+}
+
+.IndexThumbnails .thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 24px 40px;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.IndexThumbnails .thumb img {
+    width: 360px;
+    height: 173px;
+    border: 2px solid #000;
+    border-radius: var(--border-radius);
+}
+
+.IndexThumbnails .thumb-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 12px 0 2px;
+    padding-left: 4px;
+}
+
+.IndexThumbnails .thumb-context {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+.IndexSpot .spot-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 60px;
+}
+
+.IndexSpot .spot-img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    display: block;
+}
+
+.IndexSpot .spot-quote {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: var(--font-header);
+    font-size: 64px;
+    text-align: left;
+    max-width: 45%;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    z-index: 2;
+}
